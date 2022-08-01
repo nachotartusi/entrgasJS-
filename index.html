@@ -82,35 +82,37 @@
                     <p class="text-center">Ingresar nuevo paciente</p>
                     <div class="col-md-6">
                       <label for="inputEmail4" class="form-label">Nombre y Apellido</label>
-                      <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido">
+                      <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="name" required>
                     </div>
                     <div class="col-md-6">
                       <label for="inputPassword4" class="form-label">Edad</label>
-                      <input type="number" class="form-control" id="edad" placeholder="Edad">
+                      <input type="number" class="form-control" id="edad" placeholder="Edad" name="edad" required>
                     </div>
                     <div class="col-12">
                       <label for="inputAddress" class="form-label">Telefono</label>
-                      <input type="number" class="form-control" id="tel" placeholder="Telefono">
+                      <input type="number" class="form-control" id="tel" placeholder="Telefono" name="tel" required>
                     </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Mail</label>
+                        <input type="email" class="form-control" id="correo" placeholder="mail" name="email" required>
+                      </div>
                     <div class="col-md-4">
-                      <label for="inputState" class="form-label">Tipo Consulta</label>
+                      <label for="inputState" class="form-label" name="consultas" aria-required="true">Tipo Consulta</label>
                       <select id="select" class="form-select" aria-label="Default select example ">
                         <option class="select" selected>Tipo de Consulta</option>
-                        <option  id="primeraVisita" value="$850">Primera Visita</option>
-                        <option id="consultaUnica" value="$1700">Consulta Unica</option>
-                        <option id="promoMensual" value="$6800">Promo Mensual</option>
+                        <option  id="primeraVisita" value="1">Primera Visita</option>
+                        <option id="consultaUnica" value="2">Consulta Unica</option>
+                        <option id="promoMensual" value="3">Promo Mensual</option>
                     </select>
                     </div>
                     <div class="col-12">
-                      <button type="button" id="botonIngresar" value="Ingresar Paciente" class="btn btn-primary">Registrar Paciente</button>
+                      <!--<button type="button" id="button" value="Ingresar Paciente" class="btn btn-primary">Registrar Paciente</button>-->
+                      <input type="submit" id="button" value="Registrar Paciente" class="btn btn-primary">
                     </div>
                 </form>
-
             </section> 
             <div id="main2">
-                
             </div> 
-            
         </main>
 
         <footer>
