@@ -25,15 +25,15 @@ function listaPacienteDOM (arrayLista) {
             let nuevoDiv = document.getElementById("main2");
             let nuevoPaciente = document.createElement ("div");
             let html = `
-            <div class="card d-flex flex-row " id="${arrayLista[i].nombre}" style="width: 18rem>
+            <div class="card d-flex flex-row col-12" id="${arrayLista[i].nombre}" style="width: 18rem>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Nombre: ${arrayLista[i].nombre}</li>
-                    <li class="list-group-item">Edad: ${arrayLista[i].edad}</li>
-                    <li class="list-group-item">Telefono: ${arrayLista[i].telefono}</li>
-                    <li class="list-group-item">Precio: ${arrayLista[i].tipoConsulta} </li>
-                    <li class="list-group-item">Paciente Numero: ${arrayLista[i].nroCliente}</li>
-                    <li class="list-group-item">Mail: ${arrayLista[i].mail}</li>
-                    <button id="botonEliminar" onclick ="pacienteEliminado(${arrayLista[i].nroCliente})"> Eliminar Paciente </button>
+                    <li class="col-2 list-group-item">${arrayLista[i].nombre}</li>
+                    <li class="col-1 list-group-item">${arrayLista[i].edad}</li>
+                    <li class="col-2 list-group-item">${arrayLista[i].telefono}</li>
+                    <li class="col-2 list-group-item">${arrayLista[i].tipoConsulta} </li>
+                    <li class="col-1 list-group-item">${arrayLista[i].nroCliente}</li>
+                    <li class="col-3 list-group-item">${arrayLista[i].mail}</li>
+                    <button class="col-1" id="botonEliminar" onclick ="pacienteEliminado(${arrayLista[i].nroCliente})"> Eliminar Paciente </button>
                 </ul>
             </div>`;
             nuevoPaciente.className = "card1";
